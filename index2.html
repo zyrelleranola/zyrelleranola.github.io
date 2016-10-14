@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Profile</title>
+<style type="text/css">
+	body {
+	     background: url(pics/nebula.jpg);/
+	     }
+
+	li   {
+	     display: inline;
+	     margin-right: 10px;
+	     font-family: Rio Glamour personal use, Century Gothic;
+	     border-bottom: 1px solid;}
+
+ 	#Carousel1 .frame
+	     {
+ 	     width: 991px;
+             display: inline-block;
+             float: left;
+             height: 454px;
+	     }
+
+        #wb_Carousel1 .pagination
+	     {
+  	     bottom: 0;
+   	     left: 0;
+             position: absolute;
+             text-align: center;
+             vertical-align: middle;
+             width: 991px;
+             z-index: 999;
+             }
+
+         #wb_Carousel1 .pagination img
+             {
+             border-style: none;
+             padding: 12px 12px 12px 12px;
+             }
+
+	img.align-left {
+	display: horizontal;
+	margin: 0px auto;}
+	img.medium {
+	width: 300px;
+	height: 300px;}
+
+	a:link, a:visited {
+    background-color: #B23C56;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #E58B9D;
+}     
+</style>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/wb.carousel.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+   var Carousel1Opts =
+   {
+      delay: 3000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'forward',
+      direction: '',
+      pagination: true,
+      pagination_img_default: 'pics/page_default.png',
+      pagination_img_active: 'pics/page_active.png',
+      start: 0,
+      width: 991
+   };
+   $("#Carousel1").carousel(Carousel1Opts);
+   $("#Carousel1_back a").click(function()
+   {
+      $('#Carousel1').carousel('prev');
+   });
+   $("#Carousel1_next a").click(function()
+   {
+      $('#Carousel1').carousel('next');
+   });
+});
+</script>
+<body>
+<center><img src="pics/logo2.png" alt="Logo" style="width:185;height:200;"></center>
+
+<center>
+<ul>
+	<li class="selected"><a href="index.html">Home</a></li>
+	<li class="selected"><a href="index2.html">Profile</a></li>
+	<li class="selected"><a href="index3.html">Gallery</a></li>
+	<li class="selected"><a href="index4.html">Interests</a></li>
+	<li class="selected"><a href="index8.html">Contact Me</a></li>
+</ul>
+</center>
+
+<center><font face="LillyBelle" color="#84F8FF"><h1>About Me</h1></font></center>
+
+<center>
+<img src="pics/Zyrelle.jpg" class="align-left medium"/>
+<font face="Century Gothic" color="#FFA9CC"><p><b>
+	<p>Hey! I'm Zyrelle A. Rañola you can call me "Zy" for short. 
+	   I'm 19 years old and I grew up in Bahrain. 
+	   We migrated to Bahrain in the year 2001 and I was about 3-4 years old back then I was sent to an all Pakistani school by my 
+	   lola at first. I remember I didn't have a lot of friends since I was the only Filipino from that school and I was forced to pray 
+	   like how the muslim students did a few months my parents sent me to Philippine School (Bahrain). I love to sing and dance when 
+	   I was in kindergarten I won first place from a singing competition where I sang <em>"Pagdating Ng Panahon"</em> my parents and my lola 
+	   was very proud of me. <br>My dancing skills started when <em>"Spaghetti"</em> by SexBomb Girls and <em>"Pamela One"</em> by Vhong Navarro 
+<br/>	   was a big hit. I also love to draw when I'm in the mood or when I don't have anything to do.</p>
+</center>
+</font></p></b>
+
+</body>
+</html> 

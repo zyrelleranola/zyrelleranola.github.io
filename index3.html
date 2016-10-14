@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Gallery</title>
+<style type="text/css">
+	body {
+	     background: url(pics/nebula.jpg);/
+	     }
+
+	li   {
+	     display: inline;
+	     margin-right: 10px;
+	     font-family: Rio Glamour personal use, Century Gothic;
+	     border-bottom: 1px solid;}
+
+ 	#Carousel1 .frame
+	     {
+ 	     width: 991px;
+             display: inline-block;
+             float: left;
+             height: 454px;
+	     }
+
+        #wb_Carousel1 .pagination
+	     {
+  	     bottom: 0;
+   	     left: 0;
+             position: absolute;
+             text-align: center;
+             vertical-align: middle;
+             width: 991px;
+             z-index: 999;
+             }
+
+         #wb_Carousel1 .pagination img
+             {
+             border-style: none;
+             padding: 12px 12px 12px 12px;
+             }
+
+	img.align-center {
+	display: horizontal;
+	margin: 0px auto;}
+	img.medium {
+	width: 250px;
+	height: 250px;}
+
+	a:link, a:visited {
+    background-color: #B23C56;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #E58B9D;
+}     
+</style>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/wb.carousel.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+   var Carousel1Opts =
+   {
+      delay: 3000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'forward',
+      direction: '',
+      pagination: true,
+      pagination_img_default: 'pics/page_default.png',
+      pagination_img_active: 'pics/page_active.png',
+      start: 0,
+      width: 991
+   };
+   $("#Carousel1").carousel(Carousel1Opts);
+   $("#Carousel1_back a").click(function()
+   {
+      $('#Carousel1').carousel('prev');
+   });
+   $("#Carousel1_next a").click(function()
+   {
+      $('#Carousel1').carousel('next');
+   });
+});
+</script>
+<body>
+<center><img src="pics/logo2.png" alt="Logo" style="width:185;height:200;"></center>
+
+<center>
+<ul>
+	<li class="selected"><a href="index.html">Home</a></li>
+	<li class="selected"><a href="index2.html">Profile</a></li>
+	<li class="selected"><a href="index3.html">Gallery</a></li>
+	<li class="selected"><a href="index4.html">Interests</a></li>
+	<li class="selected"><a href="index8.html">Contact Me</a></li>
+</ul>
+</center>
+
+	<center><font face="LillyBelle" color="#84F8FF"><h1>Photos of Memories</h1>
+	<img src="pics/gallery_17.jpg"  class="align-center medium"/>
+	<img src="pics/gallery_12.jpg"  class="align-center medium"/>
+	<img src="pics/gallery_18.jpg"  class="align-center medium"/>
+	<img src="pics/gallery_21.jpg"  class="align-center medium"/>
+
+	
+<br/>
+	<img src="pics/gallery_2.jpg"  class="align-center medium"/>
+	<img src="pics/gallery_13.jpg"  class="align-center medium"/>
+	<img src="pics/gallery_15.jpg"  class="align-center medium"/>
+	<img src="pics/gallery_1.jpg"  class="align-center medium"/>
+<br/>
+	<img src="pics/gallery_4.jpg"  class="align-center medium"/>
+	<img src="pics/gallery_10.jpg" class="align-center medium"/>
+	<img src="pics/gallery_7.jpg"  class="align-center medium"/>
+	<img src="pics/gallery_20.jpg"  class="align-center medium"/>
+</body>
+</html>

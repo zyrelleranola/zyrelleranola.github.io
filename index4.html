@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>Interests</title>
+<style type="text/css">
+	body {
+	     background: url(pics/nebula.jpg);/
+	     }
+
+	li   {
+	     display: inline;
+	     margin-right: 10px;
+	     font-family: Rio Glamour personal use, Century Gothic;
+	     border-bottom: 1px solid;}
+
+ 	#Carousel1 .frame
+	     {
+ 	     width: 991px;
+             display: inline-block;
+             float: left;
+             height: 454px;
+	     }
+
+        #wb_Carousel1 .pagination
+	     {
+  	     bottom: 0;
+   	     left: 0;
+             position: absolute;
+             text-align: center;
+             vertical-align: middle;
+             width: 991px;
+             z-index: 999;
+             }
+
+         #wb_Carousel1 .pagination img
+             {
+             border-style: none;
+             padding: 12px 12px 12px 12px;
+             }
+
+	a:link, a:visited {
+    background-color: #B23C56;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: #E58B9D;
+}
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/wb.carousel.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+   var Carousel1Opts =
+   {
+      delay: 3000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'forward',
+      direction: '',
+      pagination: true,
+      pagination_img_default: 'pics/page_default.png',
+      pagination_img_active: 'pics/page_active.png',
+      start: 0,
+      width: 991
+   };
+   $("#Carousel1").carousel(Carousel1Opts);
+   $("#Carousel1_back a").click(function()
+   {
+      $('#Carousel1').carousel('prev');
+   });
+   $("#Carousel1_next a").click(function()
+   {
+      $('#Carousel1').carousel('next');
+   });
+});
+</script>
+<body>
+<center><img src="pics/logo2.png" alt="Logo" style="width:185;height:200;"></center>
+
+<center>
+<nav>
+<ul>
+
+	<li class="selected"><a href="index.html">Home</a></li>
+	<li class="selected"><a href="index2.html">Profile</a></li>
+	<li class="selected"><a href="index3.html">Gallery</a></li>
+	<li class="dropdown"><a href="index4.html">Interests</a>
+  		<div class="dropdown-content">
+    		<a href="index5.html">Hobbies</a>
+    		<a href="index6.html">Talents</a>
+    		<a href="index7.html">Sports</a>
+  	</li>
+	</li>
+	<li class="selected"><a href="index8.html">Contact Me</a></li>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<center><font face="LillyBelle" size="15" color="#84F8FF"> Some of the things I love to do.</font></center>
+</ul>
+</nav>
+</body>
+</html>
